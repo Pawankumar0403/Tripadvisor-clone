@@ -8,4 +8,4 @@ HTML and CSS best practices
 Replica of the Udemy homepage
 
 # Demo
-You can view a live demo of the project :
+You can view a live demo of the project :  https://pawankumar0403.github.io/Tripadvisor-clone/
