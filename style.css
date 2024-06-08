@@ -793,7 +793,7 @@ body {
     h3 {
         display: flex;
         flex-wrap: wrap;
-        width: 350px;
+        width: 200px;
     }
 
     .title__s3,
