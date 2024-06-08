@@ -1,0 +1,933 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+
+}
+
+/* menu */
+
+.menu {
+    display: none;
+    margin: 5px;
+}
+
+/* user */
+
+.user {
+    display: none;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.navbar__s1 img {
+    width: 190px;
+    cursor: pointer;
+}
+
+.navbar__s2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 550;
+}
+
+.navbar__s2 p {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.navbar__s2 p:hover {
+    background-color: #E0E0E0;
+    border-radius: 25px;
+}
+
+.navbar__s3__box img {
+    width: 23px;
+}
+
+.navbar__s3__box {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.navbar__s3__box p {
+    border-left: solid 2px #E0E0E0;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.navbar__s3 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar__s3__box:hover {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+}
+
+.navbar__s3__signin button {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 10px 14px;
+    border: solid black 2px;
+    border-radius: 25px;
+    margin-left: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* searchbar wrapper*/
+
+.searchbar-s1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchbar-s1 h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 25px;
+}
+
+.searchbar-s1 ul {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    overflow: auto;
+}
+
+.searchbar-s1 ul li {
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.searchbar-s1 .search {
+    border-bottom: solid 2px;
+}
+
+.searchbar-s1 ul li:hover {
+    border-bottom: solid 2px black;
+    color: rgb(181, 179, 179);
+}
+
+/* searchbar */
+
+.searchbar-s2 {
+    display: flex;
+    width: 50%;
+    border: solid #d8d8d8 1px;
+    border-radius: 30px;
+    height: 25px;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    margin: 25px;
+}
+
+.searchbar-s2 input {
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.searchbar-s2 input:focus {
+    background-color: transparent;
+    height: 45px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.searchbar-s2 i {
+    margin-left: 10px;
+}
+
+.searchbar-s2:hover {
+    border: solid black 1px;
+}
+
+/* beta-ai */
+
+.beta img {
+    margin-top: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.beta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* partnership card */
+
+.partnership {
+    display: flex;
+    background-color: #FAF1ED;
+    flex-wrap: wrap;
+    width: 80%;
+    position: relative;
+    width: 1100px;
+    height: 168px;
+    text-align: center;
+    overflow: hidden;
+    padding: 15px;
+    margin: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.partnership__img {
+    position: absolute;
+    left: 22px;
+    bottom: 14px;
+    border-radius: 2px;
+    width: 170px;
+    height: 170px;
+    transform: rotate(-5deg);
+}
+
+.partnership .partnership__s1 {
+    position: absolute;
+    width: fit-content;
+    top: 20px;
+    left: 230px;
+    background-color: #E0E0E0;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.partnership h3 {
+    position: absolute;
+    left: 215px;
+    top: 35px;
+    margin: 20px;
+    text-align: left;
+}
+
+.partnership__para {
+    position: absolute;
+    left: 220px;
+    top: 100px;
+    margin: 15px;
+    text-align: left;
+}
+
+.partnership button {
+    margin: 10px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    padding: 12px 22px;
+    border: solid black 1px;
+    border-radius: 25px;
+    width: 135px;
+    height: 45px;
+    right: 15px;
+    bottom: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.partnership button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* title */
+.title__s3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 183px;
+    padding: 10px;
+}
+
+.title__s3 h2 {
+    font-weight: 500;
+}
+
+.title__s3 p {
+    color: #5F5F5F;
+}
+
+/* image card */
+
+.image__card__s3 {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 170px;
+    margin-right: 175px;
+    padding: 10px;
+}
+
+.image__card__s3 img {
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* images position */
+
+.section__s1,
+.section__s2,
+.section__s3,
+.section__s4 {
+    position: relative;
+}
+
+.s1 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.s2 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.s3 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.s4 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* chennai title */
+
+.chennai {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.chennai__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 170px;
+    padding: 10px;
+}
+
+.chennai__title p {
+    color: #5F5F5F;
+}
+
+/* chennai images */
+
+.chennai__img img {
+    height: 270px;
+    width: 270px;
+    border-radius: 15px;
+    align-items: center;
+    cursor: pointer;
+    padding: 9px;
+}
+
+.chennai__img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+/* image content */
+
+.paras {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 265px;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+.img__container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rating {
+    color: #5F5F5F;
+    font-size: 12px;
+}
+
+.price {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* image card */
+
+.partnership .part__title {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+/* explore */
+
+.explore {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FAF1ED;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore__title {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FAF1ED;
+}
+
+.explore__title h2 {
+    margin-top: 30px;
+    margin-left: 195px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.explore__img img {
+    width: 365px;
+    height: 240px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.explore__img {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.explore__para {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    font-weight: 600;
+}
+
+.explore__para p {
+    text-align: center;
+    padding: 15px;
+}
+
+.explore__para p:hover {
+    text-decoration: underline black;
+    color: #5F5F5F;
+}
+
+.explore__img .img__s1 {
+    margin-top: 20px;
+}
+
+/* next holiday */
+
+.title__s3__s1 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 183px;
+    padding: 10px;
+}
+
+.title__s3__s1 h2 {
+    font-weight: 500;
+}
+
+.title__s3__s1 p {
+    color: #5F5F5F;
+}
+
+/* wanderlab */
+
+.beta .beta__s1 {
+    cursor: pointer;
+    border-radius: 0;
+}
+
+/* footer */
+
+.footer {
+    background-color: #FAF1ED;
+    margin-top: 50px;
+    padding: 25px;
+}
+
+.footer__sec1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footer__sec1 h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer__sec1 p {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer__s4 {
+    position: relative;
+    bottom: 65px;
+}
+
+.footer__s3__s1 {
+    margin-top: 15px;
+}
+
+/* footer sec2 */
+
+.footer__sec2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+
+}
+
+.logos {
+    display: flex;
+}
+
+.logos img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin: 10px;
+    color: #5F5F5F;
+}
+
+/* dropdown */
+
+.dropdown {
+    display: flex;
+    margin-right: 165px;
+    gap: 10px;
+}
+
+.country__s1,
+.cash__s1 {
+    padding: 8px 15px;
+    color: #333333;
+    background-color: white;
+    border: solid 2px #cfcdcd;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 600;
+    outline: none;
+}
+
+/* logo img */
+.logo__img {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+
+}
+
+.logo__img i {
+    cursor: pointer;
+}
+
+/* footer dec */
+
+.footer__sec1 p:hover {
+    text-decoration: underline black;
+    color: #5F5F5F;
+}
+
+/* media queries */
+
+@media screen and (max-width:1000px) {
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar__s2 {
+        display: none;
+    }
+
+    .navbar__s3__box {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar__s3__signin {
+        padding: 5px;
+    }
+
+    .partnership {
+        display: flex;
+        flex-wrap: wrap;
+        width: 94%;
+    }
+
+    .partnership .partnership__img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        transform: rotate(-5deg);
+    }
+
+    .partnership p,
+    h3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+    }
+
+    .title__s3,
+    .chennai__title,
+    .title__s3__s1 {
+        margin: 10px;
+    }
+
+    .image__card__s3 {
+        margin: 0;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 50%;
+        overflow: auto;
+        justify-content: space-evenly;
+    }
+
+    .beta img,
+    .beta__s1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 98%;
+    }
+
+    .chennai__img {
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .img__container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+
+    .image__card__s3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__sec1,
+    .dropdown {
+        display: none;
+    }
+
+    .footer__sec2 {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    body {
+        font-size: 10px;
+        flex-wrap: wrap;
+    }
+
+    .searchbar-s2 {
+        width: 80%;
+    }
+
+    .explore__title h2 {
+        text-align: left;
+        margin: 10px;
+    }
+
+    .explore__img {
+        flex-basis: 40%;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+    .menu {
+        display: block;
+    }
+
+    .navbar__s2 {
+        display: none;
+    }
+
+    .navbar__s3__box {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar__s3__signin {
+        padding: 5px;
+    }
+
+    .partnership {
+        display: flex;
+        flex-wrap: wrap;
+        width: 94%;
+    }
+
+    .partnership .partnership__img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        transform: rotate(-5deg);
+    }
+
+    .partnership p,
+    h3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+    }
+
+    .title__s3,
+    .chennai__title,
+    .title__s3__s1 {
+        margin: 10px;
+    }
+
+    .image__card__s3 {
+        margin: 0;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 50%;
+        overflow: auto;
+        justify-content: space-evenly;
+    }
+
+    .beta img,
+    .beta__s1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 98%;
+    }
+
+    .chennai__img {
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img__container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image__card__s3{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+
+    .footer__sec1,
+    .dropdown {
+        display: none;
+    }
+
+    .footer__sec2 {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    body {
+        font-size: 10px;
+        flex-wrap: wrap;
+    }
+
+    .searchbar-s2 {
+        width: 80%;
+    }
+
+    .explore__title h2 {
+        text-align: left;
+        margin: 10px;
+    }
+
+    .explore__img {
+        flex-basis: 40%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .menu {
+        display: block;
+    }
+
+    .navbar__s2 {
+        display: none;
+    }
+
+    .navbar__s3__box {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar__s3__signin {
+        display: none;
+    }
+
+    .user {
+        display: block;
+        cursor: pointer;
+    }
+
+    .searchbar-s1 h1,
+    .searchbar-s1 ul {
+        display: none;
+    }
+
+    .partnership {
+        display: none;
+    }
+
+
+    .explore__title h2 {
+        text-align: left;
+        margin-left: 45px;
+    }
+
+    .beta img,
+    .beta__s1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .image__card__s3 {
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+
+
+
+}
