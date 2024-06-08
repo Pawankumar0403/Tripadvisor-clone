@@ -706,7 +706,7 @@ body {
         justify-content: space-around;
     }
 
-    .img__container{
+    .img__container {
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
@@ -793,7 +793,8 @@ body {
     h3 {
         display: flex;
         flex-wrap: wrap;
-        width: 200px;
+        width: 180px;
+        overflow: hidden;
     }
 
     .title__s3,
@@ -835,7 +836,7 @@ body {
         align-items: center;
     }
 
-    .image__card__s3{
+    .image__card__s3 {
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
